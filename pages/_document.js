@@ -19,6 +19,7 @@ export default class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
+          <script data-cfasync="false" type="text/javascript" src="/static/scripts/sendMail.js"></script>
         </body>
         <style global jsx>{`
 

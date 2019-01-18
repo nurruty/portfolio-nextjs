@@ -17,7 +17,7 @@ class Contact extends Component {
   render() {
     const { value } = this.state
     return (
-      <div style={{backgroundColor: '#1b1c1d'}}>
+      <div style={{backgroundColor: '#1B242F'}}>
       <Container text id="contact">
       <Segment style={{ padding: '8em 0em' }} vertical>
        <Header as='h2' style={{ fontSize: '2.5em', color: '#fff' }}>

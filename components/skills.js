@@ -82,7 +82,7 @@ const TecList = () => {
 
 
 const Skills = () => (
-  <Segment style={{ padding: '8em 0em' }} vertical id="skills">
+  <Segment style={{ padding: '8em 0em', backgroundColor: '#f5f5f5' }} vertical id="skills">
     
     <Grid container stackable verticalAlign='middle'>
     <Header as='h2' style={{ fontSize: '2em' }}>
@@ -116,6 +116,7 @@ const Skills = () => (
     </Grid>
   
   </Segment>
+
 )
 
 export default Skills

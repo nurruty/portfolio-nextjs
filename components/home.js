@@ -114,7 +114,8 @@ class DesktopContainer extends Component {
           <Segment
             inverted
             textAlign='center'
-            style={{ minHeight: 700, padding: '1em 0em' }}
+            style={{ minHeight: 700, padding: '1em 0em', 
+            backgroundColor: '#1B242F' }}
             vertical
           >
             <Menu
@@ -238,7 +239,7 @@ const HomePage = ({children}) => (
   <Head>
     <title>Nicolas Urruty</title>
   </Head>
-  <ResponsiveContainer>
+  <ResponsiveContainer >
     {children}
   </ResponsiveContainer>
   </div>

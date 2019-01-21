@@ -1,9 +1,15 @@
-import { Component } from 'react'
-import { Header, Container, Icon, Button } from 'semantic-ui-react'
+import React, { Component } from 'react'
+import { Container, Icon, Button } from 'semantic-ui-react'
 
 class Footer extends Component {
 
-  handleClick = () => console.log('asdfas')
+  scrollTop = (e) => {
+    window.scroll({
+      top: 0, 
+      left: 0, 
+      behavior: 'smooth'
+    });  
+  } 
 
   render() {
 
@@ -25,11 +31,11 @@ class Footer extends Component {
           transition: 'background .5s'
         }}
         name="angle double up" inverted
-        onClick={this.handleClick}
+        onClick={this.scrollTop}
         />
         
         <Container style={{ padding: '.5em 0em' }} text>
-          <div className="footnote" onClick={this.handleClick}>
+          <div className="footnote" >
               Nicolás Urruty &copy;2019
           </div>
         </Container>

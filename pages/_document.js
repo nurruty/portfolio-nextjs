@@ -4,11 +4,6 @@ import Footer from '../components/footer'
 
 export default class MyDocument extends Document {
 
-  scrollTop = (e) => {
-    console.log('a');
-    window.scrollTo(0, 0)
-  } 
-
   render() {
 
     return (
@@ -27,8 +22,6 @@ export default class MyDocument extends Document {
           <NextScript />
           <script data-cfasync="false" type="text/javascript" src="/static/scripts/sendMail.js"></script>
         </body>
-
-        <Footer />
         
         <style global jsx>{`
 

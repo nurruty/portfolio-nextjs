@@ -3,6 +3,9 @@ import HomePage from '../components/home';
 import About from '../components/about';
 import Skills from '../components/skills';
 import Contact from '../components/contact';
+import Experience from '../components/experience';
+import Education from '../components/education';
+import Footer from '../components/footer';
 
 const Index = () => (
   <div >
@@ -12,7 +15,10 @@ const Index = () => (
   <HomePage>
     <About />
     <Skills />
+    <Experience />
+    <Education />
     <Contact />
+    <Footer />
   </HomePage>
   </div>
 )

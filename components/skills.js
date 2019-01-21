@@ -58,7 +58,7 @@ const tecs = [
 const SkillsList = ({data}) => {
   return (
    <Card.Group centered>{skills.map(item => 
-    <Card id={item.language}>
+    <Card key={item.language} >
       <Card.Content>
         <Card.Header>{item.language}</Card.Header>
       
@@ -75,7 +75,7 @@ const SkillsList = ({data}) => {
 const TecList = () => {
   return(
     <Image.Group>{tecs.map(tec => 
-        <Image  rounded size='small' id={tec.name} src={tec.src} circular />   
+        <Image  rounded size='small' key={tec.name} src={tec.src} circular />   
     )}</Image.Group>
   )
 }

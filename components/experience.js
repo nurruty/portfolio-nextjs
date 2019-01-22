@@ -4,7 +4,10 @@ import {
     Grid,
     Header,
     Container,
-    Divider
+    Divider,
+    Modal,
+    Button,
+    Icon
   } from 'semantic-ui-react'
 
   const descriptions = [
@@ -44,11 +47,24 @@ import {
     ]
   ]
 
+  
   const ProjectList = () => {
     return(
     <Container textAlign='center'>
     <Image.Group size='small'>{projects[0].map(project => 
-        <Image rounded  key={project.name} src={project.logo} style={{ margin: '0 2em'}}/>
+        <Modal trigger={<Image rounded   src={project.logo} style={{ margin: '0 2em'}}/>} key={project.name}>
+         <Modal.Content image>
+          <Image size='large' src='https://react.semantic-ui.com/images/avatar/large/rachel.png' />
+        </Modal.Content>
+        <Modal.Actions>
+          <Button basic color='red' inverted>
+            <Icon name='remove' /> No
+          </Button>
+          <Button color='green' inverted>
+            <Icon name='checkmark' /> Yes
+          </Button>
+        </Modal.Actions>
+      </Modal>
     )}</Image.Group>
     </Container>
     )
